@@ -8,7 +8,7 @@ ENV MAVEN_HOME /usr/share/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
 
 # Copy the project files into the container
-COPY . .
+COPY ./jstl-sandbox .
 
 # Set the working directory
 WORKDIR /jstl-sandbox

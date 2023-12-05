@@ -13,7 +13,7 @@ ENV PATH $MAVEN_HOME/bin:$PATH
 RUN apt-get update && apt-get install -y maven
 
 # Set the working directory to the project directory
-WORKDIR /app/jstl-sandbox
+WORKDIR /app/var/lib/jenkins/workspace/Jenkins
 
 # Run Maven clean install
 RUN mvn clean install

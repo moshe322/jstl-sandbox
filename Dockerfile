@@ -4,7 +4,7 @@ FROM ubuntu:latest
 WORKDIR /app
 
 # Copy the Maven project files into the container
-COPY jstl-sandbox /app/jstl-sandbox
+COPY ./ /app
 
 ENV MAVEN_HOME /usr/share/maven
 ENV PATH $MAVEN_HOME/bin:$PATH

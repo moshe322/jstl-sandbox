@@ -20,7 +20,7 @@ RUN mvn clean install
 
 FROM tomcat:8-alpine
 
-COPY jstl-test-1.0.war /usr/local/tomcat/webapps
+COPY target/jstl-test.war /usr/local/tomcat/webapps
 
 EXPOSE 8080
 

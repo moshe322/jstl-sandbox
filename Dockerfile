@@ -20,7 +20,9 @@ RUN mvn clean install
 
 FROM tomcat:8-alpine
 
-COPY jstl-test.war /usr/local/tomcat/webapps
+WORKDIR /usr/local/tomcat/webapps
+
+COPY --from=0 /var/lib/jenkins/workspace/Jenkins/target/jstl-test.war .
 
 EXPOSE 8080
 
